@@ -1,4 +1,4 @@
-![logo](https://acdn.tinkoff.ru/static/documents/0f0aa9f1-0b06-4fe5-960c-5ca04de7904a.png)
+![logo](https://acdn.tinkoff.ru/static/documents/ff59e890-eb57-4b28-971f-cfdda8b10a7a.svg)
 
 # Tinkoff analytics project
 
@@ -18,9 +18,9 @@
 В пакете ***calculations*** производятся расчеты.
 
 ```python
-df = list(1, 2, 3, 4)
+df = 'name'
 for i in df:
-    i += 1
+    i += '1'
 ```
 
 
