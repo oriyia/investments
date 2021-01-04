@@ -38,5 +38,3 @@ df_etf = pd.DataFrame(dict(TECH=['Америка', 'yes', 'USD', 'Stock', 'IT', 
                            FXDE=['Германия', 'yes', 'EUR', 'Stock', None, 'FXDE.ME'],
                            FXWO=['Мир', 'yes/no', 'USD', 'Stock', None, 'FXWO.ME'],
                            FXRW=['Мир', 'yes/no', 'RUB', 'Stock', None, 'FXRW.ME']))
-
-print(df_etf)
