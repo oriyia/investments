@@ -39,13 +39,13 @@ def exchange_rates(client):
 
 
 # загрузка кэша
-def free_money(client, broker_account_id):
+def free_money(client, broker_account_id, usd, eur):
     cash_info = client.portfolio.portfolio_currencies_get(broker_account_id=broker_account_id)
     cash_rub = cash_info.payload.currencies[0].balance
     cash_usd = cash_info.payload.currencies[1].balance
     cash_eur = cash_info.payload.currencies[2].balance
-    # cash_total = round(cash_rub + cash_usd * usd + cash_eur * eur, 2)
-    return dict(rub=cash_rub, usd=cash_usd, eur=cash_eur)
+    cash_total = round(cash_rub + cash_usd * usd + cash_eur * eur, 2)
+    return dict(rub=cash_rub, usd=cash_usd, eur=cash_eur, total=cash_total)
 
 
 # загрузка текущего портфеля
